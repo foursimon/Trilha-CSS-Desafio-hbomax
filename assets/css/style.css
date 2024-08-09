@@ -1,0 +1,75 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    min-width: 200px;
+    width: 100%;
+    padding: 32px 24px;
+    position: fixed;
+    top:0;
+    scroll-margin-bottom: 6rem;
+    display: flex;
+    background-color: var(--nav-bg-color);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+.navbar__logo{
+    width: 100px;
+}
+
+
+.navbar__subitem:nth-child(1){
+    margin-right: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+.navbar__btn{
+    font-weight: 700;
+    font-size: 0.75rem; 
+    text-transform: uppercase;
+    font-family: "Raleway", Quicksand;
+    padding: 8px 26px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: var(--tertiary-color);
+    border-radius: 20px;
+    transition: background-color 1.5s, color 1.5s;
+}
+
+.navbar__btn:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+@media screen and (min-width:481px) {
+    .navbar__logo{
+        width: 160px;
+    }
+    
+    .navbar{
+        padding: 12px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

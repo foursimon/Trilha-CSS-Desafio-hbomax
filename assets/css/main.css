@@ -1,0 +1,363 @@
+main{
+    width: 100%;
+    min-width: 200px;
+    margin: auto;
+}
+.card-btn:hover{
+    transform: scale(1.05);
+}
+.btn:hover{
+    cursor: pointer;
+    background-position: 100% 0px;
+    outline-color: var(--secondary-color);
+}
+.btn{
+    outline: 3px solid transparent;
+    transition: background-position 1s, outline 1s;
+}
+
+.main__section{
+    background: url(../images/background-movies-series.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    scroll-margin-top: 30px;
+}
+
+.main__content{
+    max-width: 1500px;
+    padding: 24px;
+    display:flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 38px;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.main__title{
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--card-bg-color);   
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    min-height: 600px;
+    font-size: 1rem;
+}
+
+.main__mobile-title{
+    margin: 0;
+}
+
+.main__mobile-price{
+    margin: 0;
+}
+
+.main__mobile-money, .main__display-money{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.main__mobile-name, .main__display-name{
+    margin-bottom: 16px;
+}
+.main__mobile-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: start;
+    padding: 0;
+}
+
+.main__display-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: start;
+    padding: 0;
+}
+
+.main__mobile-item::marker, .main__display-item::marker{
+    content: "+";
+    font-size: 32px;
+}
+
+.main__mobile-item, .main__display-item{
+    padding: 0px 0px 0px 12px;
+    font-weight: 400;
+}
+
+.card-btn{
+    width: 98%;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    font-size: 0.80rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border: none;
+    border-radius: 100px;
+    padding: 16px 40px;
+    max-width: 500px;
+    transition: background-position 1s, outline 1s, transform 1s;
+}
+
+.main__display-btn{
+    padding: 20px 40px;
+}
+
+.series__title{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 180px 0px 35px;
+}
+.section-series{
+    padding: 24px;
+    width: 100%;
+}
+.series{
+    max-width: 1200px;
+    padding: 2px;
+    margin: auto;
+    min-width: 200px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 100%);
+    gap: 34px;
+    overflow-y: hidden;
+}
+
+.series__card{
+    border-radius: 10px;
+    background-position: center;
+    outline: 2px solid transparent;
+    transition: transform 0.5s ease-out, outline 1s, background-image 1s;
+}
+
+.series__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 1s;
+}
+
+.series__card:nth-of-type(1):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/hbo-hover_0.webp);
+    background-size: cover;
+}
+.series__card:nth-of-type(2):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/MAX-Hover.webp);
+    background-size: cover;
+}
+.series__card:nth-of-type(3):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/DC-Hover.webp);
+    background-size: cover;
+}
+.series__card:nth-of-type(4):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/WB-Hover.webp);
+    background-size: cover;
+}
+.series__card:nth-of-type(5):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/CN-Hover.png);
+    background-size: cover;
+}
+.series__card:nth-of-type(6):hover{
+    outline-color: var(--secondary-color);
+    background: url(../images/UCL-Hover.webp);
+    background-size: cover;
+}
+
+.series__image:hover{
+    opacity: 0;
+}
+
+
+/* página signin */
+.login__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: none;
+}
+.login__container{
+    min-width: 300px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 40px;
+    max-width: 800px;
+    background-color: var(--form-bg-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.login__title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    display: block;
+    font-size: 1.25rem;
+}
+
+.login__question{
+    text-align: left;
+}
+
+.login__input{
+    font-family: Raleway, sans-serif;
+    display: block;
+    padding: 16px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+.login__email:invalid{
+    border-color: var(--form-field-error)
+}
+
+.login__senha:invalid{
+    border-color: var(--form-field-error);
+}
+.login__input::placeholder{
+    font-weight: 400;
+    font-size: 1.01rem;
+    color: var(--form-field-placeholder)
+}
+
+
+.login__btn{
+    width: auto;
+}
+
+.login__button{
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.login__forgot{
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+
+.main__signin{
+    width: 100%;
+    height: 70%;
+    margin: 130px auto auto;
+}
+
+.signin{
+    background-image: url(../images/background-movies-series.png);
+    background-size: cover;
+}
+
+
+@media screen and (min-width:481px) and (max-width: 800px){
+    .series{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+@media screen and (min-width:481px){
+    .series{
+        padding: 20px;
+    }
+    .main__mobile-money, .main__display-money{
+        font-size: 2rem;
+    }
+    .main__mobile-list, .main__display-list{
+        font-size: 1.25rem;
+        font-weight:900;
+    }
+    .card{
+        padding: 40px 60px;
+        max-width: 536px;
+    }
+    .main__mobile-name, .main__display-name{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main__signin{
+        margin: 80px auto auto;
+    }
+}
+
+@media screen and (min-width: 801px){
+    .series{
+        padding: 35px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap:44px;
+    }
+
+    .main__content{
+        margin: 0px 20px;
+        justify-content: space-evenly;
+        column-gap: 0px;
+    }
+}
+
+@media screen and (pointer: fine){
+    .card{
+        transition: transform 1s ease-in-out;
+    }
+    
+    :has(.main__mobile-card:hover) .main__display-card{
+        transform: rotateY(-40deg);
+        transform-origin: center;
+    }
+
+    :has(.main__display-card:hover) .main__mobile-card{
+        transform: rotateY(40deg);
+        transform-origin: center;
+    }
+
+    .series__card:nth-of-type(1):hover{
+        transform: scale(1.05);
+    }
+    .series__card:nth-of-type(2):hover{
+        transform: scale(1.05);
+    }
+    .series__card:nth-of-type(3):hover{
+        transform: scale(1.05);
+    }
+    .series__card:nth-of-type(4):hover{
+        transform: scale(1.05);
+    }
+    .series__card:nth-of-type(5):hover{
+        transform: scale(1.05);
+    }
+    .series__card:nth-of-type(6):hover{
+        transform: scale(1.05);
+    }
+}
