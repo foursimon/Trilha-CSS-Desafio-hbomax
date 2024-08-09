@@ -62,7 +62,7 @@ a{
     cursor: pointer;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:801px) {
     .navbar__logo{
         width: 160px;
     }
